@@ -1,7 +1,6 @@
 from openai import OpenAI
 from dotenv import dotenv_values
 
-# Load API key from .env
 config = dotenv_values(".env")
 client = OpenAI(api_key=config["API_KEY"])
 
